@@ -96,7 +96,7 @@ function Scene({ cameraAnimRef, targetAnimRef }: any) {
 
 // ── Main component ─────────────────────────────────────────────────────────────
 export default function CinematicSceneShowcase() {
-  const navigate           = useNavigate(); // eslint-disable-line @typescript-eslint/no-unused-vars
+  const _navigate          = useNavigate();
   const { navigateTo }     = usePageTransition();
   const containerRef       = useRef<HTMLDivElement>(null);
   const smoothWrapperRef   = useRef<HTMLDivElement>(null);
