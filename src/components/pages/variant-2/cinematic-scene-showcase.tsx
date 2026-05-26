@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useGLTF, PerspectiveCamera } from '@react-three/drei';
-import { useNavigate } from 'react-router-dom';
+
 import { usePageTransition } from '@/context/TransitionContext';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -96,7 +96,6 @@ function Scene({ cameraAnimRef, targetAnimRef }: any) {
 
 // ── Main component ─────────────────────────────────────────────────────────────
 export default function CinematicSceneShowcase() {
-  const _navigate          = useNavigate();
   const { navigateTo }     = usePageTransition();
   const containerRef       = useRef<HTMLDivElement>(null);
   const smoothWrapperRef   = useRef<HTMLDivElement>(null);

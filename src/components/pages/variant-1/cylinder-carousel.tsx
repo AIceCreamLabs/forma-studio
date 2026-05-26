@@ -205,7 +205,7 @@ export function CylinderCarousel() {
     // ── Image loading → texture → scene ──────────────────────────────────
     const circumference     = 2 * Math.PI * cylinderConfig.radius;
     const textureAspectRatio= imageConfig.height / (imageConfig.width * N);
-    const _heightCorrection = (circumference * textureAspectRatio) / cylinderConfig.height;
+
 
     images.forEach((src, i) => {
       const img = new Image();
