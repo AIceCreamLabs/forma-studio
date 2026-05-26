@@ -203,10 +203,6 @@ export function CylinderCarousel() {
     interactEl.addEventListener('touchend',   onTouchEnd,   { passive: true });
 
     // ── Image loading → texture → scene ──────────────────────────────────
-    const circumference     = 2 * Math.PI * cylinderConfig.radius;
-    const textureAspectRatio= imageConfig.height / (imageConfig.width * N);
-
-
     images.forEach((src, i) => {
       const img = new Image();
       img.crossOrigin = 'anonymous';
